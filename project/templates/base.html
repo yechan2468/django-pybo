@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- JQuery JS -->
+    <script src="{% static 'pybo/jquery-3.6.0.min.js' %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static 'pybo/bootstrap.min.js' %}"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'pybo/bootstrap.min.css' %}">
+    <!-- JS -->
+    {% block script %}
+    {% endblock %}
+    <title>
+        Pybo
+    </title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    
+    {% block content %}
+    {% endblock %}
+    
+    <!-- JQuery JS -->
+    <script src="{% static 'pybo/jquery-3.6.0.min.js' %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static 'pybo/bootstrap.min.js' %}"></script>
+</body>
+</html>
